@@ -19,7 +19,7 @@ from e2e.utils.utils import (
     load_yaml_file,
     write_env_to_yaml
 )
-from e2e.utils.config import metadata, configure_env_file, configure_resource_fixture, ebs_addon
+from e2e.utils.config import metadata, configure_env_file, configure_resource_fixture
 
 from e2e.conftest import (
     region,
@@ -30,7 +30,7 @@ from e2e.conftest import (
 
 from e2e.fixtures.cluster import cluster
 from e2e.fixtures.secrets import aws_secrets_driver, create_secret_string
-from e2e.fixtures.installation import installation, clone_upstream
+from e2e.fixtures.installation import installation, clone_upstream, ebs_addon
 from e2e.fixtures.clients import (
     kfp_client,
     port_forward,
