@@ -40,6 +40,7 @@ from e2e.fixtures.clients import (
     password,
     client_namespace,
     create_k8s_admission_registration_api_client,
+    account_id
 )
 from e2e.utils import mysql_utils
 
