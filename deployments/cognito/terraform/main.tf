@@ -128,7 +128,7 @@ module "eks_blueprints" {
 }
 
 module "eks_blueprints_kubernetes_addons" {
-  source = "github.com/ananth102/terraform-aws-eks-blueprints//modules/kubernetes-addons?ref=heads/policyfix"
+  source = "github.com/ananth102/terraform-aws-eks-blueprints//modules/kubernetes-addons?ref=policyfix"
 
   eks_cluster_id       = module.eks_blueprints.eks_cluster_id
   eks_cluster_endpoint = module.eks_blueprints.eks_cluster_endpoint
